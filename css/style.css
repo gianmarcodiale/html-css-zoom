@@ -21,19 +21,58 @@ header {
     justify-content: flex-end;
     column-gap: 10px;
     padding: 0.5rem;
+    height: 35.5px;
 }
 
 a {
     text-decoration: none;
 }
 
-/* #region Utility */
-.btn {
+main {
+    width: 100vw;
+    height: calc(100vh - 35.5px);
+}
+
+/* #region Header */
+.speaker-view, .fullscreen {
     padding: 2px;
     background-color: var(--gray);
     color: white;
     border-radius: 5px;
     font-size: 13px;
 }
+/* #endregion Header */
 
-/* #region Header */
+/* #region Main */
+.main-screen {
+    width: 90%;
+    margin: auto;
+}
+
+.screen-img {
+    width: 14%;
+    position: relative;
+}
+.screen-img>img {
+    width: 100%;
+}
+
+.main-screen {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name {
+    color: white;
+    width: 55%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #4a4a4ab9;
+    font-size: 15px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+
+
